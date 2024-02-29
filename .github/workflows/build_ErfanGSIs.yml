@@ -14,14 +14,14 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/20.4.27/miui_MIMIX3_20.4.27_8f7879221b_10.0.zip
+  ROM_URL: https://bigota.d.miui.com/V14.0.4.0.UMBCNXM/miui_NUWA_V14.0.4.0.UMBCNXM_54c70dc059_14.0.zip
   ROM_NAME: MIUI
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-24.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
